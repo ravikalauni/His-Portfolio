@@ -178,72 +178,36 @@ button {
 
 @media (max-width: 768px) {
     .logo {
-    height: 90px;  /* Adjust height as needed */
+        height: 90px; /* Adjust height for mobile */
     }
-    .back-btn {
-    display: block;
-    font-size: 12px;
-    background: darkred;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
 
-    }
-    header button {
-    margin-top: 10px
-    
-
-    }
     header {
-    background: white;
-    display: block;
-    justify-content: ;
-    align-items: center;
-    padding: 15px 15px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    
-
-
-  
+        padding: 10px; /* Reduced padding for mobile */
     }
-    .similar-container {
-            width: 200px;
-            padding: 10px;
-            background: white;
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;          
-            border-radius: 5px;
-            position: absolute;
-            top: 30%;
-            display: none;
-            left:2%;
-            font-family: Signika Negative;
-            z-index: 1;
-           
 
-        }
-      .suggestion-container {
-            width: 200px;
-            padding: 10px;
-            background: white;
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;            
-            border-radius: 5px;
-            position: absolute;
-            top: 34%;
-            display: none;
-            left: 2%;
-            font-family: Signika Negative;
-            z-index: 1;
-        }
     .back-btn {
-    background: darkred;
-    color: white;
-    margin-left: 20px;
-    position: relative;
-    left: 0px;
-    padding: 8px 15px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+        font-size: 12px; /* Smaller font size for mobile */
+        padding: 10px 15px; /* Slightly larger padding for easier tapping */
+    }
+
+    .container {
+        padding: 10px; /* Reduced padding for mobile */
+    }
+
+    h1 {
+        font-size: 20px; /* Smaller font size for mobile */
+    }
+
+    .article-image {
+        max-width: 100%; /* Full width images on mobile */
+        margin: 10px 0; /* Add spacing around images */
+    }
+
+    .suggestion-container,
+    .similar-container {
+        width: 90%; /* Full width on mobile */
+        top: auto;
+        left: auto;
+        margin: 10px auto; /* Center the container */
+    }
 }
