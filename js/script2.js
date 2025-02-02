@@ -1,7 +1,7 @@
 function downloadPDF() {
     const link = document.createElement('a');
-    link.href = '../contents/documents/interstaller-movie-review.pdf';  // Change this to your actual PDF file
-    link.download = 'Article.pdf';
+    link.href = '../Contents/documents/interstaller-movie-review.pdf';  // Change this to your actual PDF file
+    link.download = 'Interstaller-movie-review.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
