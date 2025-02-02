@@ -1,7 +1,7 @@
 function downloadPDF() {
     const link = document.createElement('a');
-    link.href = '../contents/documents/IT-meets-multiverse-theory-article.pdf';  // Change this to your actual PDF file
-    link.download = 'Article.pdf';
+    link.href = '../Contents/documents/IT-meets-multiverse-theory-article.pdf';  // Change this to your actual PDF file
+    link.download = 'IT-Meets-Multiverse-theory-ravi.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
