@@ -1,7 +1,7 @@
 function downloadPDF() {
     const link = document.createElement('a');
-    link.href = '../contents/documents/Man vs Machine.pdf';  // Change this to your actual PDF file
-    link.download = 'Article.pdf';
+    link.href = '../Contents/documents/Man vs Machine.pdf';  // Change this to your actual PDF file
+    link.download = 'man-vs-machine-article-ravi.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
