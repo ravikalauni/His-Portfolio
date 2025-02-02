@@ -1,7 +1,7 @@
 function downloadPDF() {
     const link = document.createElement('a');
-    link.href = '../contents/documents/ma-chara-kabita.pdf';  // Change this to your actual PDF file
-    link.download = 'Article.pdf';
+    link.href = '../Contents/documents/ma-chara-kabita.pdf';  // Change this to your actual PDF file
+    link.download = 'ma-chara-udirahanchhu-poem-ravi.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
