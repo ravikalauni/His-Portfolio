@@ -1,7 +1,7 @@
 function downloadPDF() {
     const link = document.createElement('a');
-    link.href = '../contents/documents/squid-game-review.pdf';  // Change this to your actual PDF file
-    link.download = 'Article.pdf';
+    link.href = '../Contents/documents/squid-game-review.pdf';  // Change this to your actual PDF file
+    link.download = 'squidgame-netflix-show-review-ravi.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
