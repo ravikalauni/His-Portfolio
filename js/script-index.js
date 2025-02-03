@@ -1,7 +1,5 @@
 const phrases = [
   "A person exists,",
-  "A presence is here,",
-  "A life unfolds,",
   "Someone dwells in this reality,",
   "A human stands among us,"
 ];
