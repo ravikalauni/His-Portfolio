@@ -276,12 +276,13 @@ footer {
     border: none;
     color: white;
     position: absolute;
-    top: 205px;
+    top: 190px;
     left: 310px;
     z-index: 2;
     }
     #search-bar{
         margin-bottom: 24px;
+        width: 300px;
     }
     .nav-icons a {
        margin-bottom: 34px;
