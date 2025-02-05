@@ -145,18 +145,18 @@ a {
     left: -280px;
     width: 250px;
     height: 100%;
-    background-color: #dfe0e8;
-    color: black;
+    background-color: #301c47;
+    color: white;
     display: flex;
     flex-direction: column;
     padding: 10px;
     transition: left 0.3s ease;
-    border: 1px solid #aaabb5;
+    border: 1px solid #190b29;
     z-index: 2;
 }
 
 #side-nav a {
-    color: #313136;
+    color: white;
     text-decoration: none;
     padding: 10px;
     border-bottom: 1px solid #444;
@@ -183,12 +183,12 @@ a {
     cursor: pointer;
     background: none;
     border: none;
-    color: #22222e;
+    color: white;
     align-self: flex-end;
 }
 
 #close-btn:hover {
-    color: #3a3a4f;
+    color: silver;
 }
 
 /* Footer */
@@ -201,6 +201,7 @@ footer {
     background-color: #363333;
     color: white;
     font-size: 14px;
+    margin-top: 80px;
 }
 
 .footer-section {
@@ -276,7 +277,7 @@ footer {
     color: white;
     position: absolute;
     top: 205px;
-    left: 350px;
+    left: 310px;
     z-index: 2;
     }
     #search-bar{
@@ -306,5 +307,11 @@ footer {
     text-align: center;
     color: white;
     margin-top: 6px;
+    }
+    .ravi-logo {
+    height: 70px;
+    cursor: pointer;
+   
+}
     
 }
