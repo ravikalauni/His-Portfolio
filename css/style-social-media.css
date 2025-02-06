@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #f4f1ee;
+    background-color: #091c0e;
     font-family: roboto;
 }
 
@@ -16,7 +16,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #eee5de;
+    background-color: #091c0e;
     padding: 10px 20px;
     border-bottom: 1px solid #ccc;
 }
@@ -28,18 +28,27 @@ header {
 /* Navigation Buttons */
 nav {
     display: flex;
-    gap: 10px;
+    flex-wrap: wrap;  /* Allows buttons to move to next line if needed */
+    justify-content: center; /* Centers buttons on small screens */
+    gap: 5px; /* Adjusts spacing between buttons */
+    max-width: 100%; /* Ensures the nav doesn't exceed the screen width */
+    padding: 10px;
 }
 
 nav button {
-    background-color: #2c2c96;
+    background-color: transparent;
     color: white;
-    border: none;
+    border: 1px solid white;
     padding: 10px 15px;
     font-size: 14px;
     border-radius: 5px;
     cursor: pointer;
+   
+    font-size: 12px; /* Adjust font size for small screens */
+    padding: 8px 12px; /* Adjust padding */
+    white-space: nowrap; /* Prevents text from breaking */
 }
+
 
 nav button:hover {
     background-color: #1f1f7a;
@@ -54,14 +63,14 @@ main {
 
 .bio-container {
     
-    background: white;
+    background: #3d0220;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     width: 700px;
 }
 h2 {
-    color: #1d3f92;
+    color: white;
     font-size: 22px;
 }
 
@@ -83,9 +92,11 @@ h2 {
 }
 
 .card {
-    background: white;
+    background: #17010c;
+    border: 1px solid white;
     border-radius: 10px;
     padding: 20px;
+    color: white;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -99,32 +110,38 @@ h2 {
 
 h3 {
     font-size: 18px;
-    color: #333;
+    color: white;
     margin: 10px 0;
 }
 
 p {
     font-size: 14px;
-    color: #666;
+    color: white;
 }
 
 .buttons {
     margin-top: 10px;
+    
 }
 
 .btn {
     display: block;
-    background: #1d3f92;
+    background: transparent;
     color: white;
     text-decoration: none;
     padding: 8px;
     margin: 5px;
+    border: 1px solid white;
     border-radius: 5px;
     font-size: 14px;
+    transition: 0.3s;
 }
 
 .btn:hover {
-    background: #0f2a5a;
+    background: #33031b;
+  
+    transition: 0.3s;
+    border-radius: 20px;
 }
 
 .not-available {
@@ -168,43 +185,38 @@ p {
 /* Footer */
 footer {
     display: flex;
-    justify-content: space-between;
-    padding: 50px;
+    flex-direction: column;
+    align-items: left;
+    padding: 20px;
     background-color: #363333;
-    position: relative;
-    top: 90px;
     width: 100%;
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     
+    text-align: justify;
+    gap: 40px;
+
 }
 
-footer a {
-    color: #d4d4d4
-;font-size: 14px;
-    text-decoration: none;
-    display: block;
-    
+.footer-section {
+    margin-bottom: 10px;
 }
-.footer-section2 .about {
-    font-size: 14px;
-    width: 760px;
-    text-align: justify;
-}
+
 .footer-btn {
-        color: white;
-        background-color: #4a4844;
-        border: none;
-        padding: 7px;
-        margin-top: 10px;
-    }
-     .footer-section3 {
-        background-color: none;
-        padding: 10px;
-        border-radius: 5px;
-        margin-top: 5px;
-        margin-left: 10px;
-    }
+    color: white;
+    background-color: #4a4844;
+    border: none;
+    padding: 7px 10px;
+    margin-top: 9px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-btn a {
+    color: white;
+    text-decoration: none;
+}
+
 @media screen and (max-width: 768px) {
     main {
     display: block;
@@ -214,7 +226,7 @@ footer a {
 
     .bio-container {
     
-    background: white;
+   
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -245,13 +257,13 @@ footer a {
 
     /* footer */
     footer {
-    display: block;
+    display: none;
     
     padding: 20px;
     background-color: #363333;
     position: relative;
-    left: 0%;
-    width: 135%;
+    left: 10%;
+    width: 150%;
     
     color: white;
     font-size: 19px;
@@ -295,34 +307,37 @@ footer a {
     display: flex;
     align-items: left;
     justify-content: space-between;
-    background-color: #eee5de;
+    background-color: #091c0e;
     padding: 60px 30px;
-    border-bottom: 1px solid #ccc;
+    border: none;
     }
 
     .logo {
-    height: 60px;
+    height: 90px;
     position: absolute;
-    left: 0px;
+    left: 60px;
     top: 20px;
     }
 
 /* Navigation Buttons */
-    nav {
-    display: flex;
-    gap: 6px;
-}
+  nav {
+        flex-direction: raw; /* Stack buttons vertically if needed */
+        align-items: center; /* Center buttons in column layout */
+        gap: 20px;
+    }
 
     nav button {
         position: relative;
-        top: 30px;
-    background-color: #2c2c96;
+        top: 70px;
+    background-color: transparent;
     color: white;
-    border: none;
+    border: 1px solid white;
     width: 110px;
     font-size: 14px;
     border-radius: 5px;
-
+  
+        
+  
     cursor: pointer;
     }
 
@@ -330,7 +345,7 @@ footer a {
     background-color: #1f1f7a;
     }
     h2 {
-    color: #1d3f92;
+    
     font-size: 22px;
 }
 
@@ -352,7 +367,7 @@ footer a {
 }
 
 .card {
-    background: white;
+    
     border-radius: 10px;
     padding: 15px;
     text-align: center;
@@ -368,13 +383,13 @@ footer a {
 
 h3 {
     font-size: 18px;
-    color: #333;
+    
     margin: 10px 0;
 }
 
 p {
     font-size: 14px;
-    color: #666;
+   
 }
 
 .buttons {
@@ -383,7 +398,7 @@ p {
 
 .btn {
     display: block;
-    background: #1d3f92;
+   
     color: white;
     text-decoration: none;
     padding: 8px;
