@@ -23,7 +23,70 @@ header {
     border-bottom: 1px solid #ccc;
     flex-wrap: wrap;
 }
+.words button {
+   margin: 7px;
+   background: white;
+    padding: 13px;
+    border: none;
+    font-size: 13px;
+    border-radius: 6px;
+    cursor: pointer;
 
+}
+.words button h3 {
+    font-family: Anton;
+}
+.chatBot {
+    display: flex;
+    
+}
+.instruction{
+    margin-bottom: 0px;
+    text-align: center;
+}
+.chatBot button {
+    padding: 12px;
+    text-align: left;
+    margin: 10px;
+    background: red;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    line-height: 23px;
+    max-width: 200px;
+    width: 100%;
+    text-align: left;
+}
+.chatBot .click .chatbot-logo {
+    width: 120px;
+    margin-top: 0px;
+    
+}
+.click {
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    text-decoration: none;
+    color: antiquewhite;
+    font-family: Roboto Condensed;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+.click:hover {
+    background-color: #3d3a3a;
+    transition: 0.3s;
+}
+a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+.chatBot button p {
+    line-height: 16px;
+    margin-top: 10px;
+    color: rgb(255, 225, 225);
+}
 .logo {
     height: 50px;
 }
