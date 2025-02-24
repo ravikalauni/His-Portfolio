@@ -2,11 +2,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f8f8f8;
+    background: #01000a;
+    position: relative;
 }
 
+
 header {
-    background: white;
+    background: transparent;
     display: flex;
     justify-content: ;
     align-items: center;
@@ -24,12 +26,12 @@ header button {
 }
 
 .back-btn {
-    background: darkred;
+    background: transparent;
     color: white;
     margin-left: 20px;
-   
-    padding: 8px 15px;
-    border: none;
+   font-size: 16px;
+    padding: 12px 15px;
+    border: 1px solid white;
     cursor: pointer;
     border-radius: 5px;
 }
@@ -37,21 +39,47 @@ header button {
 .container {
     max-width: 800px;
     margin: 20px auto;
-    background: white;
+    width: 100%;
+    position: relative;
     padding: 20px;
+    color: white;
     border-radius: 8px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    
 }
 
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, #230553, #032708, #420101, #134101, #02382f, #01133a, #260038);
+    background-size: 400% 400%;
+    animation: moveBg 10s linear infinite;
+    border-radius: 8px;
+    z-index: -1;
+}
+
+@keyframes moveBg {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+
+
 h1 {
-    font-size: 25px;
-    color: #333;
+    font-size: 28px;
+    color: #ffffff;
     font-family: PT Serif Static;
 
 }
 
 .date {
-    color: #666;
+    color: #9cb66b;
     font-size: 14px;
     margin-bottom: 10px;
 }
@@ -74,8 +102,9 @@ button {
 }
 
 .pdf-btn {
-    background: darkred;
+    background: transparent;
     color: white;
+    border: 1px solid white;
 }
 
 .content {
@@ -88,13 +117,14 @@ button {
 
 .article-image {
     max-width: 350px;
-    border-radius: 0px;
+    border-radius: 10px;
     flex-wrap: wrap;
-    padding: 6px;
-    filter: grayscale(100%);
-   
+    padding: 1px;
+    
+    
+   border: 2px solid white;
     float: right;  /* Align to the right */
-    margin: 0 0 0px 0px; /* Space from text */
+    margin: 10px 10px 10px 10px; /* Space from text */
     shape-outside: square(); /* Ensures a square wrap */
 }
 
@@ -103,7 +133,7 @@ button {
     .suggestion-container {
             width: 200px;
             padding: 10px;
-            background: white;
+            background: rgb(30, 36, 54);
             box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;            
             border-radius: 5px;
             position: absolute;
@@ -128,11 +158,11 @@ button {
          text-decoration: none;
          display: block;
          padding: 8px;
-         color: black;
+         color: rgb(255, 255, 255);
          font-family: Signika Negative;
     }
     .sug-topic:hover {
-        background-color: #f5f5f5;
+      
         border-radius: 5px;
 
     }
@@ -142,7 +172,7 @@ button {
     .similar-container {
             width: 200px;
             padding: 10px;
-            background: white;
+            background: rgb(46, 1, 38);
             box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;          
             border-radius: 5px;
             position: absolute;
@@ -154,7 +184,15 @@ button {
            
 
         }
-
+        .similar-container hr{
+            border:1px solid rgb(223, 223, 223);
+        }
+        .similar-container h3 {
+            color: white;
+        }
+        .suggestion-container h3 {
+            color: white;
+        }
     .sim-topics {
           border: 1px solid silver;
           padding: 14px;
@@ -167,47 +205,85 @@ button {
          text-decoration: none;
          display: block;
          padding: 8px;
-         color: black;
+         color: rgb(255, 255, 255);
          font-family: Signika Negative;
     }
     .sim-topic:hover {
-        background-color: #f5f5f5;
+        
         border-radius: 5px;
 
     }
 
 @media (max-width: 768px) {
     .logo {
-        height: 90px; /* Adjust height for mobile */
+    height: 90px;  /* Adjust height as needed */
     }
-
-    header {
-        padding: 10px; /* Reduced padding for mobile */
-    }
-
     .back-btn {
-        font-size: 12px; /* Smaller font size for mobile */
-        padding: 10px 15px; /* Slightly larger padding for easier tapping */
-    }
+    display: block;
+    font-size: 12px;
+    background: darkred;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
 
-    .container {
-        padding: 10px; /* Reduced padding for mobile */
     }
+    header button {
+    margin-top: 10px
+    
 
-    h1 {
-        font-size: 20px; /* Smaller font size for mobile */
     }
+    header {
+    background: transparent;
+    display: block;
+    justify-content: left;
+    align-items: center;
+    padding: 15px 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    
 
-    .article-image {
-        max-width: 100%; /* Full width images on mobile */
-        margin: 10px 0; /* Add spacing around images */
+
+  
     }
-
-    .suggestion-container,
     .similar-container {
-        width: 90%; /* Full width on mobile */
-        top: auto;
-        left: auto;
-        margin: 10px auto; /* Center the container */
-    }
+            width: 200px;
+            padding: 10px;
+            background: rgb(8, 24, 37);
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;          
+            border-radius: 5px;
+            margin-top: 115px;
+            display: none;
+            
+            font-family: Signika Negative;
+            z-index: 1;
+           
+
+        }
+      .suggestion-container {
+        margin-top: 160px;
+        transition: 0.2s;
+            width: 200px;
+            padding: 10px;
+            background: rgb(17, 1, 12);
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;            
+            border-radius: 5px;
+          
+            display: none;
+           
+            font-family: Signika Negative;
+            z-index: 1;
+        }
+    .back-btn {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    margin-left: 20px;
+    position: relative;
+    left: 0px;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
 }
