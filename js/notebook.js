@@ -76,7 +76,7 @@ function checkAge() {
     const age = parseInt(document.getElementById('raviAge').value);
     if (age >= 18 && age <= 22) {
         alert('Congratulation, You can access his diaries!');
-        location.href = '../experiences/experiece0.html';
+        location.href = '../experiences/experience0.html';
     } else {
         alert('Incorrect age. Please try again.');
     }
