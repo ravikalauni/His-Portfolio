@@ -76,7 +76,7 @@ function checkAge() {
     const age = parseInt(document.getElementById('raviAge').value);
     if (age >= 18 && age <= 22) {
         alert('Congratulation, You can access his diaries!');
-        location.href = '../experiences/experience0.html';
+        location.href = '../experiences/experiece0.html';
     } else {
         alert('Incorrect age. Please try again.');
     }
@@ -199,4 +199,26 @@ document.addEventListener('click', (event) => {
             }, 300);
         }
     }
+});
+// for cctv enable/desable funtion
+
+document.addEventListener("DOMContentLoaded", function () {
+    const button = document.getElementById("cctvBtn");
+    const popup = document.getElementById("popup");
+    let isEnabled = false;
+
+    button.addEventListener("click", function () {
+        isEnabled = !isEnabled;
+        popup.textContent = isEnabled ? "CCTV Disabled" : "CCTV Enabled";
+        
+        // Show pop-up
+        popup.classList.remove("hidden");
+        popup.classList.add("show");
+
+        // Hide after 1.5 seconds
+        setTimeout(() => {
+            popup.classList.remove("show");
+            setTimeout(() => popup.classList.add("hidden"), 300);
+        }, 1500);
+    });
 });
