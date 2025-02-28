@@ -63,7 +63,7 @@ function checkName() {
         const form = document.getElementById('dailyDiaryForm');
         form.innerHTML = `
             <div class="form-group">
-                <input type="number" id="raviAge" placeholder="Enter Ravi's current age">
+                <input type="number" id="raviAge" placeholder="Enter Ravi's age (Predict) :">
                 <button class="btn" onclick="checkAge()">Submit</button>
             </div>
         `;
@@ -76,7 +76,7 @@ function checkAge() {
     const age = parseInt(document.getElementById('raviAge').value);
     if (age >= 18 && age <= 22) {
         alert('Congratulation, You can access his diaries!');
-        location.href = '../experiences/experiece0.html';
+        location.href = 'books/diary.html';
     } else {
         alert('Incorrect age. Please try again.');
     }
