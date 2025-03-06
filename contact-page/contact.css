@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    -webkit-tap-highlight-color: transparent;
+    flex-direction: column;
+    
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.logo {
+    width: 500px;
+}
+header {
+    margin: 30px;
+}
+.info {
+    font-size: 20px;
+    padding: 10px;
+    color: rgb(0, 255, 0);
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.s-logo {
+    width: 150px;
+
+}
+.links {
+    display: flex;
+    gap: 40px;
+}
+.linked {
+    border: 1px solid rgb(255, 136, 0);
+    width: 200px;
+    padding: 12px;
+   
+    
+    align-items: center;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 25px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+.link {
+    border: 1px solid rgb(0, 255, 34);
+    width: 200px;
+    padding: 12px;
+   
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 25px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+.link:hover {
+    border: 1px solid rgb(0, 119, 6);
+    transition: 0.3s;
+
+}
+.link:active {
+    border: 1px solid red;
+
+}
+
+@media screen and (max-width: 768px) {
+    .links {
+        display: block;
+        
+    }
+    .logo {
+        width: 300px;
+    }
+}
+
+footer p {
+    Margin-top: 40px;
+    text-align: left;
+    margin-left: 10px;
+}
+footer button {
+    padding: 8px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    background-color: white;
+}
