@@ -1,8 +1,8 @@
 // Questions data
 const lifeQuestions = [
-    { question: "Which district he was born?", answer: "bBaitadi" },
-    { question: "Where do Ravi go to College?", answer: "bBrixton College"},
-    { question: "What local language he speaks?", answer: "dDotyali" }
+    { question: "Which district he was born?", answer: "Baitadi" },
+    { question: "Where do Ravi go to College?", answer: "Brixton College"},
+    { question: "What local language he speaks?", answer: "Dotyali" }
 ];
 
 const mathQuestions = [
@@ -222,3 +222,31 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 1500);
     });
 });
+
+
+const allowedNames = ["Aarav", "John", "Alice", "Emma", "Ravi", "Sandhya", "Samiksha", "Prem", "Puja", "Krishna", "Kapil", "Rohit", "KP", "Mohan", "Sulav", "Aparichit", "Kailas", "Khagendra", "Bandana", "Kamal", "Hemesh", "Deepak", "Nischal", "Manju", "Birendra", "Aayush", "Naresh", "Pawan", "Manoj", "Baldev", "Dropati", "Parwati", "Ashish", "Binod", "Rakshya", "Milan", "Dipak", "Bikash", "Pooja", "Rohit", "Kishor", "Prabesh", "Sandesh", "Avinab", "Manish", "Himanshu", "Prakash", "Lochan", "Ramchandra", "Bipin", "Jeewan", "Priyanka", "Mukesh", "Jagdish", "Gayatri", "Kavi", "Sumit", "Sushil", "Bikesh", "Keshab", "Radika", "Yamuna", "Deepak", "Laxmi", "Bhupendra", "Sandip", "Chandra", "Swostika", "Janak", "Shankar", "Santosh", "Nitin", "Rajendra", "Kabita", "Prawati", "Rupesh", "Mohan", "Parash", "Upendra", "Lalit", "Anil", "Prakash", "Ritik", "Hemant", "Sushil", "Hira", "Ramchandra", "Pankaj", "Eklavya", "Mahesh", "Khemraj", "Trilochan", "GM Rock", "Bhanubhakta", "Yogesh", "HP", "Niharika", "Amar", "Dropati", "Gaur Singh", "Lokendra", "Devraj", "Madhu", "Lokendra", "Nikita", "Kamala", "Janaki", "Amrit", "Tilak", "Dilip", "Aman", "Prashant", "Naresh", "Govind", "Tekendra", "Rustam", "Sishir", "Tilak Raj", "Prem Datta", "Prabhat", "Sagar", "Ramit", "Niraj", "Deepak", "Devraj", "Dipak", "Anish", "Namraj", "Janaki Devi", "Kishor", "Dhirendra", "Santosh", "Manish", "Alina", "Srijana", "Sagar", "Raj", "Jagdish", "Keshab", "Suraj", "Suron", "Kailash", "Jagdish", "Bishal", "Tekraj", "Shahil", "Padam Raj", "Milan", "Chandra", "Rajendra", "Harish", "Shailesh", "Nisha", "Dharmesh", "Prakash", "Hari Datt", "Puspa", "Hemant", "Ganesh", "Xitij", "Ravi", "Bisan", "Laxit", "Birdatt", "Khyam", "Dev Raj", "Dhandev", "Debaki", "Pashupati", "Bashudev", "Sumit", "Bhatta Prasad", "Amit", "Yogesh", "Krishna", "Lalita", "Santosh", "Kiran", "Dipesh", "Geetu", "Hemant", "Kabita", "Mohan", "Rajmati", "Manisha", "Anish", "Sandy", "Keshab", "Santosh", "Dhirendra", "Bisan", "Muna", "Surendra", "Chandra", "Tek Raj", "Laxmi", "Prem Datta", "Milan", "Ritik", "Nabin", "Dipesh", "Mahadev", "Bhumika", "Aarav", "Abhishek", "Aayush", "Anil", "Ashish", "Bimal", "Bibek", "Binod", "Bishal", "Chandan", "Deepak", "Dipesh", "Dinesh", "Gaurav", "Ganesh", "Govinda", "Hari", "Hemant", "Ishwor", "Jitendra", "Kiran", "Krishna", "Laxman", "Lokesh", "Madhav", "Mahesh", "Manish", "Milan", "Nabin", "Naresh", "Niraj", "Nischal", "Pankaj", "Prabin", "Prakash", "Prashant", "Pratap", "Prem", "Rabi", "Ramesh", "Ramit", "Ranjan", "Rishi", "Rohit", "Roshan", "Rupesh", "Sagar", "Samir", "Sanjay", "Santosh", "Saroj", "Shankar", "Shishir", "Shyam", "Sudeep", "Suman", "Suraj", "Sujan", "Sunil", "Ujjwal", "Umesh", "Vikas", "Yubaraj", "Arjun", "Bikash", "Chirag", "Dhiraj", "Gopal", "Gyanendra", "Jeevan", "Keshav", "Lalit", "Mohan", "Narayan", "Nitesh", "Prajwal", "Rajendra", "Rajesh", "Rajkumar", "Rupak", "Siddharth", "Subash", "Sudip", "Sundar", "Tek", "Tilak", "Uday", "Upendra", "Vivek", "Yogesh", "Santos", "Devendra", "Harihar", "Indra", "Jayan", "Kapil", "Lokmani", "Madhu", "Nagendra", "Parash", "Rajib", "Sanjeev", "Tika", "Vibhor", "Aasha", "Aayusha", "Anjali", "Anisha", "Anjana", "Asmita", "Bandana", "Bimala", "Binita", "Chhaya", "Deepa", "Dipika", "Ganga", "Geeta", "Hema", "Ishwori", "Jamuna", "Januka", "Kabita", "Kamala", "Kanchan", "Kusum", "Laxmi", "Manju", "Manisha", "Maya", "Mina", "Naina", "Namrata", "Nisha", "Pabitra", "Poonam", "Pratibha", "Puja", "Rashmi", "Renu", "Rita", "Roshani", "Sabina", "Samikshya", "Sangita", "Sanjita", "Sarita", "Sharmila", "Shila", "Shristi", "Sita", "Soniya", "Sunita", "Susmita", "Tara", "Usha", "Yamuna", "Amrita", "Arati", "Bhavna", "Charu", "Dibya", "Gopika", "Indira", "Jayanti", "Karishma", "Lalita", "Madhu", "Nirmala", "Parbati", "Radha", "Rajina", "Rekha", "Sajana", "Saraswati", "Sharada", "Sharini", "Simran", "Sristy", "Sudha", "Sumitra", "Sweta", "Tanmaya", "Tulsi", "Uma", "Urmila", "Vandana", "Yashoda", "Alisha", "Archana", "Barsha", "Chitra", "Dikshya", "Gargi", "Kabya", "Liza", "Meera", "Nabina", "Nitu", "Prakriti", "Srijana", "Suchitra", "Suman", "Trishna", "Umaiya", "Vidya"];
+   // Add allowed names here
+        
+        function submitName() {
+            let name = document.getElementById("nameInput").value.trim();
+            if (allowedNames.includes(name)) {
+                localStorage.setItem("username", name);
+                document.getElementById("overlay").style.display = "none";
+            } else {
+                document.getElementById("errorMessage").style.display = "block";
+            }
+        }
+
+
+
+        // google sheet for names
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbztoE5Qh2_1kS-BDCuN9hkeScDAsiIKgRNqQlI0ADn7lw1YqPttK9L0y_aIuDn-6dB5xg/exec'
+
+const form = document.forms['reader-form']
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  
+  
+})
